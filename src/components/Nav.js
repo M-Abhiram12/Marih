@@ -14,13 +14,13 @@ export default function Nav() {
             {deatailsShow && ( <Details /> )}
             <nav className='header_div'>
                 <div>
-                    <FiMenu size={32} className='menu_icon' onClick={() => dispatch(setdetailsbar(true))} />
+                    <FiMenu size={28} className='menu_icon' onClick={() => dispatch(setdetailsbar(true))} />
                 </div>
                 <Link to="/" className='home_link'>Glimzy</Link>
                 <div className='header_icon_div'>
-                    <Link to="search"><FiSearch onClick={() => dispatch(setShownav(true))} size={28} className='search_icon' /></Link>
-                    <Link to="profile"> <FiUser size={28} className='user_icon' /></Link>
-                    <Link to="cart"> <FiShoppingCart size={28} className='cart_icon' /></Link>
+                    <Link to="search"><FiSearch onClick={() => dispatch(setShownav(true))} size={24} className='search_icon' /></Link>
+                    <Link to="profile"> <FiUser size={24} className='user_icon' /></Link>
+                    <Link to="cart"> <FiShoppingCart size={24} className='cart_icon' /></Link>
                 </div>
             </nav>
             <Outlet />

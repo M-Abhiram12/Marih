@@ -29,26 +29,7 @@ export default function Profile() {
             <HiOutlineChevronRight size={32} />
           </div>
         ))}
-
-        <div className='details_follow'>
-          <div className='followHome_main'>
-            <h2>Follow-us</h2>
-            <div className='home_follow_us'>
-              <FaInstagram size={32} />
-              <h2>Instagram</h2>
-            </div>
-            <div className='home_follow_us'>
-              <FaYoutube size={32} />
-              <h2>Youtube</h2>
-            </div>
-            <div className='home_follow_us'>
-              <FaFacebookF size={32} />
-              <h2>Facebook</h2>
-            </div>
-          </div>
-        </div>
       </div>
-
     </div>
   )
 }

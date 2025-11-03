@@ -31,7 +31,9 @@ export default function Filter() {
                     </div>
                     <HiOutlineChevronRight size={32} />
                 </div>
-                <button>Apply</button>
+                <div className="filter_apply_btn">
+                <button className='apply_btn'>Apply</button>
+                </div>
             </div>
 
         </div>

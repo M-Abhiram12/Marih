@@ -28,6 +28,7 @@ export default function Home() {
         }
         fetchData()
         dispatch(setShownav(false))
+
     }, [dispatch])
 
     let shirts = product.filter((item => item.category === "shirts"));
@@ -213,6 +214,18 @@ export default function Home() {
                 </div>
             </div>
 
+            <div className='mostly_div'>
+                <h6 className='shirts_text'>More products</h6>
+                {loading && <h2>Loading....</h2>}
+                <div className='categeroius_scroller'>
+                    {product && product.slice(0, 6).map((item) => (
+                        <div className='mostly_content_div' key={item.id}>
+                            <img className='mostly_images' src={item.image} alt={item.productName} />
+                        </div>
+                    ))}
+                </div>
+            </div>
+
             <div className='footer_div'>
                 <div className='faq_div'>
                     <h2>FAQ</h2>
@@ -222,19 +235,21 @@ export default function Home() {
                     <p>How much gold is mixed in jewellery</p>
                 </div>
                 <div className='followHome_main'>
-                    <h2>Follow-us</h2>
+                    <h2>Contact-us</h2>
+                    <p>Marih enterprices</p>
+                    <p>machinaabhiram@gmail.com</p>
+                    <p>91+ 00000 00000</p>
+                    <p>Bhimavaram,mavullama gudi temple</p>
+
                     <div className='home_follow_us'>
-                        <FaInstagram size={32} />
-                        <h2>Instagram</h2>
+                        <FaInstagram size={22} />
+                        <p>Instagram</p>
+                        <FaYoutube size={22} />
+                        <p>Youtube</p>
+                        <FaFacebookF size={22} />
+                        <p>Facebook</p>
                     </div>
-                    <div className='home_follow_us'>
-                        <FaYoutube size={32} />
-                        <h2>Youtube</h2>
-                    </div>
-                    <div className='home_follow_us'>
-                        <FaFacebookF size={32} />
-                        <h2>Facebook</h2>
-                    </div>
+                   
                 </div>
             </div>
         </div>

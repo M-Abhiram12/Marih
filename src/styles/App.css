@@ -39,7 +39,7 @@
 .home_link {
   text-decoration: none;
   color: rgb(0, 0, 0);
-  font-size: 26px;
+  font-size: 24px;
 }
 .square {
   width: 90px;
@@ -110,6 +110,18 @@
   transition: transform 0.2s ease;
   display: inline-block;
 }
+
+.category_shirts {
+  width: 48vw;
+  height: 23vh;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 1%;
+  text-align: center;
+  transition: transform 0.2s ease;
+  display: inline-block;
+}
 .categeroius_scroller {
   overflow-x: auto;
   white-space: nowrap;
@@ -125,12 +137,23 @@
   height: 100%;
   border-radius: 8px;
 }
+.category_images {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
 
 .mostly_name {
   font-family: "Cormorant Garamond", serif;
   font-weight: 600;
   font-size: 16px;
-  margin:0px;
+  margin: 0px;
+}
+.category_name {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600;
+  font-size: 16px;
+  margin: 0px;
 }
 
 .price_div {
@@ -154,20 +177,19 @@
   margin: 0px;
 }
 .filter_icon {
-  color: #450808;
+  color: #000000;
   margin: 0px 15px 0px 0px;
 }
 .mostly_text_filter {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin: 8px;
 }
 .footer_div {
-  height: 5vh;
-  background-color: bisque;
+  background-color: rgb(255, 255, 255);
   padding: 5% 3%;
-  margin: 5% 0% 0% 0%;
-  height: 70vh;
+  margin: 5% 0% 20% 0%;
 }
 .faq_div h2 {
   padding: 3% 6%;
@@ -175,7 +197,7 @@
 .faq_div p {
   border-radius: 1px solid black;
   border-radius: 8px;
-  box-shadow: 1px 1px 10px #7e380d;
+  box-shadow: 1px 1px 10px #919191;
   padding: 3% 5%;
   font-size: 18px;
   font-family: "Cormorant Garamond", serif;
@@ -190,18 +212,19 @@
   transform: translateY(-2px); /* small hover lift */
 }
 .followHome_main > h2 {
-  padding: 3% 6%;
+  padding: 4% 0%;
   font-size: 26px;
 }
 .home_follow_us > h2 {
   padding: 0% 1%;
   font-family: "Cinzel", serif;
+  font-size: 20px;
 }
 .Details_div {
   padding: 20px;
   height: 100vh;
   width: 80vw;
-  background-color: bisque;
+  background-color: #eeeeee;
   box-shadow: 1px 2px 4px 2px black;
   position: absolute;
   left: 0px;
@@ -231,8 +254,8 @@
   align-items: center;
   margin: 0px 0px 6px 0px;
 }
-.deatils_pages p {
-  font-size: 32px;
+.deatils_pages h6 {
+  font-size: 22px;
   font-family: "Cormorant Garamond", serif;
   font-weight: bolder;
   margin: 0px;
@@ -264,7 +287,7 @@
   margin: 0px 0px 10px 0px;
 }
 .profile_pages p {
-  font-size: 32px;
+  font-size: 22px;
   font-family: "Cormorant Garamond", serif;
   font-weight: bolder;
   margin: 0px;
@@ -278,8 +301,8 @@
   margin: 0px 0px 0px 20px !important;
 }
 .icon_profile {
-  font-size: 24px;
-  color: #450808;
+  font-size: 22px;
+  color: #000000;
 }
 .cart_image {
   width: 100%;
@@ -407,6 +430,9 @@
 .followHome_main a {
   text-decoration: none;
 }
+.followHome_main p {
+  margin: 2% 0%;
+}
 
 .contact-form textarea {
   width: 100%;
@@ -437,13 +463,12 @@
   background-color: #005fa3;
 }
 .filter_div {
-  padding: 50px 20px;
-  background-color: bisque;
+  padding: 20px 20px;
+  background-color: #ffffff;
   height: 100vh;
   width: 100vw;
   box-shadow: 1px 2px 4px 2px black;
   right: 0px;
-  top: 8vh;
   position: absolute;
   z-index: 100;
   width: 80vw;
@@ -490,22 +515,42 @@
 .poster_img {
   width: 100%;
 }
-.shirts_text{
+.shirts_text {
   margin: 0px 0px 2px 15px;
 }
 .poster_slide {
-    height: 60vh;
-    margin: 5px 10px;
-    overflow: hidden;
-    border-radius: 25px;
-    box-shadow: 1px 1px 1px black;
+  height: 60vh;
+  margin: 5px 10px;
+  overflow: hidden;
+  border-radius: 25px;
+  box-shadow: 1px 1px 1px black;
 }
 .poster_slide img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.ourCollection_text{
+.ourCollection_text {
   margin: 5px 0px 5px 20px;
   font-weight: 700;
+}
+.followHome_main {
+  padding: 0% 0% 0% 5%;
+}
+.home_follow_us p {
+  margin: 0px 3px 0px 2px;
+}
+.filter_apply_btn {
+  display: flex;
+  justify-content: end;
+  margin: 10px 0px 0px 0px;
+}
+.apply_btn {
+  border-radius: 7px;
+  color: rgb(0, 0, 0);
+  background-color: rgb(236, 236, 236);
+  padding: 10px 10px;
+}
+.footermenu_div a {
+  color: black;
 }

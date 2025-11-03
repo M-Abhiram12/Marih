@@ -36,8 +36,8 @@ export default function Details() {
             dispatch(setdetailsbar(false));
 
           }} className='deatils_pages'>
-            <p>{item.name}</p>
-            <HiOutlineChevronRight size={32} />
+            <h6>{item.name}</h6>
+            <HiOutlineChevronRight size={30} />
           </div>
         ))}
 
@@ -47,21 +47,21 @@ export default function Details() {
             <a href='https://www.instagram.com/always___abhi/?hl=en' rel="noopener noreferrer"
               target='_blank' >
               <div className='home_follow_us'>
-                <FaInstagram size={32} />
+                <FaInstagram size={24} />
                 <h2>Instagram</h2>
               </div>
             </a>
             <a href='https://www.youtube.com/shorts/a79IGt9hBsQ' rel="noopener noreferrer"
               target='_blank' >
               <div className='home_follow_us'>
-                <FaYoutube size={32} />
+                <FaYoutube size={24} />
                 <h2>Youtube</h2>
               </div>
               </a>
                 <a href='https://www.youtube.com/shorts/a79IGt9hBsQ' rel="noopener noreferrer"
               target='_blank' >
             <div className='home_follow_us'>
-              <FaFacebookF size={32} />
+              <FaFacebookF size={24} />
               <h2>Facebook</h2>
             </div>
             </a>
