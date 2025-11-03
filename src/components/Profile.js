@@ -1,7 +1,6 @@
 import React from 'react';
 import { HiOutlineChevronRight } from "react-icons/hi2";
-import {
-  FaInstagram, FaFacebookF, FaYoutube, FaHome, FaQuestionCircle, FaPhoneAlt, FaBoxOpen, FaTruck
+import { FaHome, FaQuestionCircle, FaPhoneAlt, FaBoxOpen, FaTruck
 
 } from "react-icons/fa";
 import { useNavigate } from 'react-router-dom';

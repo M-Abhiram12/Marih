@@ -1,4 +1,4 @@
-import React, { useEffect, useReducer, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { HiXMark, HiArrowLeft } from 'react-icons/hi2';
 import { setShownav } from '../slices/NavSlice';
 import { useDispatch, useSelector } from 'react-redux';
